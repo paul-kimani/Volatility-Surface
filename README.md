@@ -105,9 +105,9 @@ Two visualizations are produced:
 1. **Smile slices**: Implied volatility as a function of strike for selected maturities.
 2. **3D surface**: A discretized surface over:
 
-   - X-axis: Strike $ K $ 
+   - X-axis: Strike $K$ 
    - Y-axis: Time to maturity $ T $  
-   - Z-axis: Implied volatility $ \sigma $
+   - Z-axis: Implied volatility $\sigma$
 
 These plots reveal skewness and term structure characteristics typical of equity options.
 
@@ -195,5 +195,5 @@ This project demonstrates the full pipeline of volatility surface construction:
 
 It serves as a compact yet rigorous implementation suitable for research exploration in quantitative derivatives modeling.
 
-Author : ** Paul **Mwaniki Kimani**
+Author : ** Paul Mwaniki Kimani **
 
