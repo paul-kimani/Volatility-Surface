@@ -45,31 +45,31 @@ Spot price is extracted from the latest close.
 
 Option prices are modeled using the Black–Scholes framework:
 
-\[
+$$
 d_1 = \frac{\ln(S/K) + (r - q + \tfrac{1}{2}\sigma^2)T}{\sigma \sqrt{T}}, \quad
 d_2 = d_1 - \sigma \sqrt{T}
-\]
+$$
 
 Call price:
 
-\[
+$$
 C = S e^{-qT} N(d_1) - K e^{-rT} N(d_2)
-\]
+$$
 
 Put price:
 
-\[
+$$
 P = K e^{-rT} N(-d_2) - S e^{-qT} N(-d_1)
-\]
+$$
 
 where:
 
-- \( S \) = spot price  
-- \( K \) = strike  
-- \( T \) = time to maturity (years)  
-- \( r \) = risk-free rate  
-- \( q \) = dividend yield  
-- \( \sigma \) = volatility  
+- $ S $ = spot price  
+- $ K $ = strike  
+- $ T $ = time to maturity (years)  
+- $ r $ = risk-free rate  
+- $ q $ = dividend yield  
+- $ \sigma $ = volatility  
 
 ---
 
@@ -77,9 +77,9 @@ where:
 
 Implied volatility is obtained by solving:
 
-\[
+$
 \text{BS}(\sigma) = \text{Observed Market Price}
-\]
+$
 
 This is performed using a bisection root-finding algorithm, chosen for its numerical robustness and guaranteed convergence under standard monotonicity conditions.
 
@@ -105,9 +105,9 @@ Two visualizations are produced:
 1. **Smile slices**: Implied volatility as a function of strike for selected maturities.
 2. **3D surface**: A discretized surface over:
 
-   - X-axis: Strike \( K \)  
-   - Y-axis: Time to maturity \( T \)  
-   - Z-axis: Implied volatility \( \sigma \)
+   - X-axis: Strike $ K $ 
+   - Y-axis: Time to maturity $ T $  
+   - Z-axis: Implied volatility $ \sigma $
 
 These plots reveal skewness and term structure characteristics typical of equity options.
 
@@ -195,10 +195,5 @@ This project demonstrates the full pipeline of volatility surface construction:
 
 It serves as a compact yet rigorous implementation suitable for research exploration in quantitative derivatives modeling.
 
-Author : ** Paul Mwaniki Kimani **
-
-```
-
----
-
+Author : ** Paul **Mwaniki Kimani**
 
