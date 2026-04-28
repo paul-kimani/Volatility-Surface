@@ -64,12 +64,12 @@ $$
 
 where:
 
-- $ S $ = spot price  
-- $ K $ = strike  
-- $ T $ = time to maturity (years)  
-- $ r $ = risk-free rate  
-- $ q $ = dividend yield  
-- $ \sigma $ = volatility  
+- $S$ = spot price  
+- $K$ = strike  
+- $T$ = time to maturity (years)  
+- $r$ = risk-free rate  
+- $q$ = dividend yield  
+- $\sigma$ = volatility  
 
 ---
 
